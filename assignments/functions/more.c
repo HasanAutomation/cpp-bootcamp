@@ -74,7 +74,8 @@ void findHCF(int a, int b)
 int main()
 {
     // lcm(18, 24);
-    // printNextPrime(5);
+
+    // printNextPrime(5);8
     // printNPrimeNumbers(5);
     // printPrimeBetweenTwoNumbers(2, 11);
     findHCF(98, 56);
