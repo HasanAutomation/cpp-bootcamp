@@ -73,12 +73,21 @@ int secondGreatest()
 {
     int size = inputArraySize();
     int arr[size];
+    int copied[size];
     inputArray(arr, size);
     displayArray(arr, size);
     int biggest = arr[0];
     for (int i = 0; i < size; i++)
         if (arr[i] > biggest)
             biggest = arr[i];
+
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i] == biggest)
+            continue;
+        copied[i] = arr[i];
+    }
+
     printf("Greatest is %d ", biggest);
 }
 int smallest()
@@ -202,5 +211,5 @@ int main()
     // smallest();
     // sortElements();
     // copyArray();
-    reverseArray();
+    // reverseArray();
 }
